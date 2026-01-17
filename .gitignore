@@ -31,3 +31,6 @@ lerna-debug.log*
 src/roles/
 src/products/
 src/users/
+src/Supplier/
+src/db/
+app.db
