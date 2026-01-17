@@ -1,46 +1,45 @@
-POST http://localhost:3000/api/Supplier
+POST http://localhost:3000/api/book
 Content-Type: application/json
 
 {
-  "Name": "ABC Supplier",
-  "Contact": "Alice",
-  "Address": "123 Main St, Cityville",
-  "Phone": "123-456-7890",
-  "Email": "alice@abcsupplier.com"
+  "BookID": 55001,
+  "Title": "Node.js Guide for Beginners",
+  "ISBN": "9781234567890",
+  "YearPublished": 2023,
+  "Category": "Programming"
+}
+###
+
+POST http://localhost:3000/api/book
+Content-Type: application/json
+
+{
+  "BookID": 123,
+  "Title": "Hello",
+  "ISBN": "2",
+  "YearPublished": 2026,
+  "Category": "IT"
 }
 
 ###
 
-POST http://localhost:3000/api/Supplier
+GET http://localhost:3000/api/book
+
+###
+
+PUT http://localhost:3000/api/book/123
 Content-Type: application/json
 
 {
-  "Name": "CBA Supplier",
-  "Contact": "Tom",
-  "Address": "456 Main St, Cityville",
-  "Phone": "789-654-3210",
-  "Email": "Tom@abcsupplier.com"
+  "BookID": 123,
+  "Title": "thailand",
+  "ISBN": "5",
+  "YearPublished": 2007,
+  "Category": "courty"
 }
 
 ###
 
-GET http://localhost:3000/api/Supplier
-
-###
-
-PUT http://localhost:3000/api/Supplier/3
-Content-Type: application/json
-
-{
-  "Name": "Toon",
-  "Contact": "Toon Smith",
-  "Address": "Phayo University",
-  "Phone": "091-027-9513",
-  "Email": "rftcd6vfyh@gmail.com"
-}
-
-###
-
-DELETE http://localhost:3000/api/Supplier/1
+DELETE http://localhost:3000/api/book/10001
 
 ###
